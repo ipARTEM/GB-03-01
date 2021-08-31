@@ -26,13 +26,28 @@ namespace Test01
                 Console.WriteLine("Машина не смогла завестись");
             }
 
-            Console.ReadLine();
+            
 
+            Console.WriteLine(isCarStarted.Equals(car));
+            Console.WriteLine(isCarStarted.GetHashCode());
+            Console.WriteLine(isCarStarted.GetType());
+            Console.WriteLine(car.ToString());
+
+
+
+
+            Console.ReadLine();
         }
+
+        
     }
 
     public class Car
     {
+        public override string ToString()
+        {
+            return base.ToString() + "  sdfsd";
+        }
         public MotorEngine Motor { get; set; }
 
         public bool Start()
@@ -66,7 +81,7 @@ namespace Test01
             _isWorking = true;
 
             return _isWorking;
-        }                     Unit тесты будут?
+        }                     
 
         public bool TurnOff()
         {
