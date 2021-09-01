@@ -1,3 +1,4 @@
+using APITest.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +29,8 @@ namespace APITest
         {
 
             services.AddControllers();
+            services.AddSingleton<ValuesHolder>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "APITest", Version = "v1" });
