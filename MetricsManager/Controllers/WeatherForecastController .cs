@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace APITest.Controllers
+namespace MetricsManager.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("WeatherForecast")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -24,6 +24,7 @@ namespace APITest.Controllers
         }
 
         [HttpGet]
+
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();

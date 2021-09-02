@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L01", "L01\L01.csproj", "{F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test02", "Test02\Test02.csproj", "{F4F27206-DBC3-4735-99F2-DC942644FC5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APITest", "APITest\APITest.csproj", "{B830B266-F688-4043-8089-74A0F386FB58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APITest", "APITest\APITest.csproj", "{B830B266-F688-4043-8089-74A0F386FB58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricsManager", "MetricsManager\MetricsManager.csproj", "{16E90ABD-A0DB-4A10-81B9-02AAC9E9C087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B830B266-F688-4043-8089-74A0F386FB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B830B266-F688-4043-8089-74A0F386FB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B830B266-F688-4043-8089-74A0F386FB58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E90ABD-A0DB-4A10-81B9-02AAC9E9C087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E90ABD-A0DB-4A10-81B9-02AAC9E9C087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E90ABD-A0DB-4A10-81B9-02AAC9E9C087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E90ABD-A0DB-4A10-81B9-02AAC9E9C087}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

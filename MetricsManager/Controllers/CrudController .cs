@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace APITest.Controllers
+namespace MetricsManager.Controllers
 {
-    [Route("Controller")]
+    [Route("api/crud")]
     [ApiController]
     public class CrudController : ControllerBase
     {
@@ -20,14 +20,14 @@ namespace APITest.Controllers
         [HttpPost("create")]
         public IActionResult Create([FromQuery] string input)
         {
-            _holder.Values.Add(input);
+            _holder.Add(input);
             return Ok();
         }
 
         [HttpGet("read")]
         public IActionResult Read()
         {
-            return Ok(_holder.Values);
+            return Ok(_holder.Get());
         }
 
         [HttpPut("update")]
@@ -35,8 +35,8 @@ namespace APITest.Controllers
         {
             for (int i = 0; i < _holder.Values.Count; i++)
             {
-                if (_holder.Values[i] == stringsToUpdate)
-                    _holder.Values[i] = newValue;
+                if (holder.Values[i] == stringsToUpdate)
+                    holder.Values[i] = newValue;
             }
 
             return Ok();
@@ -45,7 +45,7 @@ namespace APITest.Controllers
         [HttpDelete("delete")]
         public IActionResult Delete([FromQuery] string stringsToDelete)
         {
-            _holder.Values = _holder.Values.Where(w => w != stringsToDelete).ToList();
+            holder.Values = holder.Values.Where(w => w != stringsToDelete).ToList();
             return Ok();
         }
     }
